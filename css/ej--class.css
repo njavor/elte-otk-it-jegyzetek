@@ -22,6 +22,20 @@ main{
 
     font-size: var(--fs-button);
     font-weight: 600;
+
+
+    & div{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: .5em;
+    }
+
+    & h3:not(:first-child){
+        margin-top: 1em;
+    }
 }
 
 
@@ -102,6 +116,24 @@ main{
     }
 
 
+    & table{
+        border-collapse: collapse;
+
+
+        & th, td{
+            padding: .6em;
+
+            text-align: center;
+            border: 2px solid var(--textColor2);
+        }
+        & th{
+            font-weight: 600;
+            background: var(--bgLight);
+        }
+
+    }
+
+
     & p code, li code{
         padding: .2em .4em;
         background: #1c1d1d;
@@ -174,6 +206,7 @@ main{
 #ej--content{
     & div{
         width: 100%;
+        padding-block: .5em;
 
         display: flex;
         flex-direction: column;
