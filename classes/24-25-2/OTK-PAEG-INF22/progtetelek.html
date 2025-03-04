@@ -90,23 +90,27 @@
             <p>adsf</p>
             
             <h4>Specifikáció</h4>
-            <pre class=""><code>
-                Be: elemszám ∈ N, elemek ∈ H[1..elemszám]
-                Ki: össz ∈ H
-                Ef: -
-                Uf: össz = SZUM(i=1..elemszám, elemek[i])
-            </code></pre>
+            <div>
+                <pre class=""><code>
+                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám]
+                    Ki: össz ∈ H
+                    Ef: -
+                    Uf: össz = SZUM(i=1..elemszám, elemek[i])
+                </code></pre>
+            </div>
 
 
             <h4>Algoritmus</h4>
-            <pre class=""><code>
-                Változó
+            <div>
+                <pre class=""><code>
+                    Változó
                     i: Egész
-                össz := 0
-                Ciklus i=1-től elemszám-ig
+                    össz := 0
+                    Ciklus i=1-től elemszám-ig
                     össz := össz + elemek[i]
-                Ciklus vége
-            </code></pre>
+                    Ciklus vége
+                </code></pre>
+            </div>
             
             <span id="count" class="anchor"></span>
             <h3>Megszámolás (DARAB)</h3>
@@ -114,23 +118,27 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <pre class=""><code>
-                Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T: H->L
-                Ki: db ∈ N
-                Ef: -
-                Uf: db = DARAB(i=1..elemszám, T(elemek[i]))
-            </code></pre>
+            <div>
+                <pre class=""><code>
+                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T: H->L
+                    Ki: db ∈ N
+                    Ef: -
+                    Uf: db = DARAB(i=1..elemszám, T(elemek[i]))
+                </code></pre>
+            </div>
 
 
             <h4>Algoritmus</h4>
-            <pre class=""><code>
-                Változó
+            <div>
+                <pre class=""><code>
+                    Változó
                     i: Egész
-                db := 0
-                Ciklus i=1-től elemszám-ig
+                    db := 0
+                    Ciklus i=1-től elemszám-ig
                     HA T(elemek[i]) akkor db := db + 1
-                Ciklus vége
-            </code></pre>
+                    Ciklus vége
+                </code></pre>
+            </div>
             
             <span id="max" class="anchor"></span>
             <h3>Maximumkiválasztás (MAX)</h3>
@@ -138,26 +146,30 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <pre class=""><code>
-                Be: elemszám ∈ N, elemek ∈ H[1..elemszám]
-                Ki: maxind ∈ Z, maxért ∈ H
-                Ef: elemszám > 0
-                Uf: (maxind, maxért) = MAX(i = 1..elemszám, elemek[i])
-            </code></pre>
+            <div>
+                <pre class=""><code>
+                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám]
+                    Ki: maxind ∈ Z, maxért ∈ H
+                    Ef: elemszám > 0
+                    Uf: (maxind, maxért) = MAX(i = 1..elemszám, elemek[i])
+                </code></pre>
+            </div>
 
 
             <h4>Algoritmus</h4>
-            <pre class=""><code>
-                Változó
+            <div>
+                <pre class=""><code>
+                    Változó
                     i: Egész
-                maxért := elemek[1]; maxind := 1
-                Ciklus i=2-től elemszám-ig
+                    maxért := elemek[1]; maxind := 1
+                    Ciklus i=2-től elemszám-ig
                     Ha elemek[i] > maxért akkor
-                        maxért := elemek[i]
-                        maxind := i
+                    maxért := elemek[i]
+                    maxind := i
                     Elágazás vége
-                Ciklus vége
-            </code></pre>
+                    Ciklus vége
+                </code></pre>
+            </div>
             
             <span id="min" class="anchor"></span>
             <h3>Minimumkiválasztás (MIN)</h3>
@@ -165,26 +177,30 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <pre class=""><code>
-                Be: elemszám ∈ N, elemek ∈ H[1..elemszám]
-                Ki: minind ∈ Z, minért ∈ H
-                Ef: elemszám > 0
-                Uf: (minind, minért) = MIN(i = 1..elemszám, elemek[i])
-            </code></pre>
+            <div>
+                <pre class=""><code>
+                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám]
+                    Ki: minind ∈ Z, minért ∈ H
+                    Ef: elemszám > 0
+                    Uf: (minind, minért) = MIN(i = 1..elemszám, elemek[i])
+                </code></pre>
+            </div>
 
 
             <h4>Algoritmus</h4>
-            <pre class=""><code>
-                Változó
+            <div>
+                <pre class=""><code>
+                    Változó
                     i: Egész
-                minért := elemek[1]; minind := 1
-                Ciklus i=2-től elemszám-ig
+                    minért := elemek[1]; minind := 1
+                    Ciklus i=2-től elemszám-ig
                     Ha elemek[i] < minért akkor
-                        minért := elemek[i]
-                        minind := i
+                    minért := elemek[i]
+                    minind := i
                     Elágazás vége
-                Ciklus vége
-            </code></pre>
+                    Ciklus vége
+                </code></pre>
+            </div>
             
             <span id="is" class="anchor"></span>
             <h3>Eldöntés (VAN)</h3>
@@ -192,24 +208,28 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <pre class=""><code>
-                Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                Ki: van ∈ L
-                Ef: -
-                Uf: van = VAN(i=1..elemszám, T(elemek[i]))
-            </code></pre>
+            <div>
+                <pre class=""><code>
+                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
+                    Ki: van ∈ L
+                    Ef: -
+                    Uf: <em style="background-color: yellow;">van</em> = VAN(i=<em style="background-color: red;">1..elemszám</em>, <em style="background-color: blue;">T(elemek[i])</em>)
+                </code></pre>
+            </div>
 
 
             <h4>Algoritmus</h4>
-            <pre class=""><code>
-                Változó
+            <div>
+                <pre class=""><code>
+                    Változó
                     i: Egész
-                van := hamis
-                Ciklus amíg nem van és i <= elemszám
+                    van := hamis
+                    Ciklus amíg nem van és i <= elemszám
                     Ha T(elemek[i]) akkor van := igaz
-                        különben i := i + 1
-                Ciklus vége
-            </code></pre>
+                    különben i := i + 1
+                    Ciklus vége
+                </code></pre>
+            </div>
             
             <span id="all" class="anchor"></span>
             <h3>Mind/optimista eldöntés (MIND)</h3>
@@ -217,23 +237,27 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <pre class=""><code>
-                Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                Ki: mind ∈ L
-                Ef: -
-                Uf: mind = MIND(i=1..elemszám, T(elemek[i]))
-            </code></pre>
+            <div>
+                <pre class=""><code>
+                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
+                    Ki: mind ∈ L
+                    Ef: -
+                    Uf: mind = MIND(i=1..elemszám, T(elemek[i]))
+                </code></pre>
+            </div>
 
 
             <h4>Algoritmus</h4>
-            <pre class=""><code>
-                Változó
+            <div>
+                <pre class=""><code>
+                    Változó
                     i: Egész
-                Ciklus amíg i <= elemszám és T(elemek[i])
+                    Ciklus amíg i <= elemszám és T(elemek[i])
                     i := i + 1
-                Ciklus vége
-                mind := i > elemszám
-            </code></pre>
+                    Ciklus vége
+                    mind := i > elemszám
+                </code></pre>
+            </div>
             
             
             <span id="select" class="anchor"></span>
@@ -242,24 +266,28 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <pre class=""><code>
-                Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                Ki: ind ∈ Z
-                Ef: létezik i ∈[i..elemszám]:(T(elemek[i]))
-                Uf: ind = KIVÁLASZT(i>=1, T(elemek[i]))
-            </code></pre>
+            <div>
+                <pre class=""><code>
+                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
+                    Ki: ind ∈ Z
+                    Ef: létezik i ∈[i..elemszám]:(T(elemek[i]))
+                    Uf: ind = KIVÁLASZT(i>=1, T(elemek[i]))
+                </code></pre>
+            </div>
 
 
             <h4>Algoritmus</h4>
-            <pre class=""><code>
-                Változó
+            <div>
+                <pre class=""><code>
+                    Változó
                     i: Egész
-                i := 1
-                Ciklus amíg nem T(elemek[i])
+                    i := 1
+                    Ciklus amíg nem T(elemek[i])
                     i := i + 1
-                Ciklus vége
-                ind := i
-            </code></pre>
+                    Ciklus vége
+                    ind := i
+                </code></pre>
+            </div>
             
             
             <span id="search" class="anchor"></span>
@@ -268,24 +296,28 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <pre class=""><code>
-                Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                Ki: van ∈ L, ind ∈ Z
-                Ef: -
-                Uf: (van, ind) = KERES(i=1..elemszám, T(elemek[i]))
-            </code></pre>
+            <div>
+                <pre class=""><code>
+                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
+                    Ki: van ∈ L, ind ∈ Z
+                    Ef: -
+                    Uf: (van, ind) = KERES(i=1..elemszám, T(elemek[i]))
+                </code></pre>
+            </div>
 
 
             <h4>Algoritmus</h4>
-            <pre class=""><code>
-                Változó
+            <div>
+                <pre class=""><code>
+                    Változó
                     i: Egész
-                Ciklus amíg i <= elemszám és T(elemek[i])
+                    Ciklus amíg i <= elemszám és T(elemek[i])
                     i := i + 1
-                Ciklus vége
-                van := i <= elemszám
-                Ha van akkor ind := i
-            </code></pre>
+                    Ciklus vége
+                    van := i <= elemszám
+                    Ha van akkor ind := i
+                </code></pre>
+            </div>
             
             <span id="copy" class="anchor"></span>
             <h3>Másolás (MÁSOL)</h3>
@@ -293,22 +325,26 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <pre class=""><code>
-                Be: elemszám ∈ N, elemek ∈ H[1[1..elemszámok], f:H1->H2
-                Ki: fvelemek ∈ H2[1..elemszám]
-                Ef: -
-                Uf: fvelemek = MÁSOL(i=1..elemszám, f(elemek[i]))
-            </code></pre>
+            <div>
+                <pre class=""><code>
+                    Be: elemszám ∈ N, elemek ∈ H[1[1..elemszámok], f:H1->H2
+                    Ki: fvelemek ∈ H2[1..elemszám]
+                    Ef: -
+                    Uf: fvelemek = MÁSOL(i=1..elemszám, f(elemek[i]))
+                </code></pre>
+            </div>
 
 
             <h4>Algoritmus</h4>
-            <pre class=""><code>
-                Változó
+            <div>
+                <pre class=""><code>
+                    Változó
                     i: Egész
-                Ciklus i=1-től elemszámig
+                    Ciklus i=1-től elemszámig
                     fvelemek[i] := f(elemek[i])
-                Ciklus vége
-            </code></pre>
+                    Ciklus vége
+                </code></pre>
+            </div>
             
             <span id="filter" class="anchor"></span>
             <h3>Kiválogatás (KIVÁLASZT)</h3>
@@ -316,26 +352,30 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <pre class=""><code>
-                Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                Ki: db ∈ N, kivelemek ∈ H[1..db]
-                Ef: -
-                Uf: (db, kivelemek)=KIVÁLOGAT(i=1..elemszám, T(elemek[i]), elemek[i])
-            </code></pre>
+            <div>
+                <pre class=""><code>
+                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
+                    Ki: db ∈ N, kivelemek ∈ H[1..db]
+                    Ef: -
+                    Uf: (db, kivelemek)=KIVÁLOGAT(i=1..elemszám, T(elemek[i]), elemek[i])
+                </code></pre>
+            </div>
 
 
             <h4>Algoritmus</h4>
-            <pre class=""><code>
-                Változó
+            <div>
+                <pre class=""><code>
+                    Változó
                     i: Egész
-                db := 0
-                Ciklus i=1-től elemszám-ig
+                    db := 0
+                    Ciklus i=1-től elemszám-ig
                     Ha T(elemek[i]) akkor
-                        db := db + 1
-                        kivelemek[db] := elemek[i]
+                    db := db + 1
+                    kivelemek[db] := elemek[i]
                     Elágazás vége
-                Ciklus vége
-            </code></pre>
+                    Ciklus vége
+                </code></pre>
+            </div>
 
 
 
