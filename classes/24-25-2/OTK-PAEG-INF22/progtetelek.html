@@ -87,21 +87,21 @@
             <span id="sum" class="anchor"></span>
             <h3>Összegzés (SZUM)</h3>
             
-            <p>adsf</p>
+            <p>Valamennyi szám összegének kiszámítása</p>
             
             <h4>Specifikáció</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Be: elemszám ∈ N, elemek ∈ H[1..elemszám]
-                    Ki: össz ∈ H
+                    Ki: <em class="vissza1">össz</em> ∈ H
                     Ef: -
-                    Uf: össz = SZUM(i=1..elemszám, elemek[i])
+                    Uf: <em class="vissza1">össz</em> = SZUM(i=<em class="vissza2">1..elemszám</em>, <em class="vissza3">elemek[i]</em>)
                 </code></pre>
             </div>
 
 
             <h4>Algoritmus</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Változó
                     i: Egész
@@ -118,18 +118,18 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T: H->L
-                    Ki: db ∈ N
+                    Ki: <em class="vissza1">db</em> ∈ N
                     Ef: -
-                    Uf: db = DARAB(i=1..elemszám, T(elemek[i]))
+                    Uf: <em class="vissza1">db</em> = DARAB(i=<em class="vissza2">1..elemszám</em>, <em class="vissza3">T(elemek[i])</em>)
                 </code></pre>
             </div>
 
 
             <h4>Algoritmus</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Változó
                     i: Egész
@@ -146,18 +146,18 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Be: elemszám ∈ N, elemek ∈ H[1..elemszám]
-                    Ki: maxind ∈ Z, maxért ∈ H
+                    Ki: <em class="vissza1">maxind</em> ∈ Z, <em class="vissza4">maxért</em> ∈ H
                     Ef: elemszám > 0
-                    Uf: (maxind, maxért) = MAX(i = 1..elemszám, elemek[i])
+                    Uf: (<em class="vissza1">maxind</em>, <em class="vissza4">maxért</em>) = MAX(i =<em class="vissza2">1..elemszám</em>, <em class="vissza3">elemek[i]</em>)
                 </code></pre>
             </div>
 
 
             <h4>Algoritmus</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Változó
                     i: Egész
@@ -177,18 +177,18 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Be: elemszám ∈ N, elemek ∈ H[1..elemszám]
-                    Ki: minind ∈ Z, minért ∈ H
+                    Ki: <em class="vissza1">minind</em> ∈ Z, <em class="vissza4">minért</em> ∈ H
                     Ef: elemszám > 0
-                    Uf: (minind, minért) = MIN(i = 1..elemszám, elemek[i])
+                    Uf: (<em class="vissza1">minind</em>, <em class="vissza4">minért</em>) = MIN(i =<em class="vissza2">1..elemszám</em>, <em class="vissza3">elemek[i]</em>)
                 </code></pre>
             </div>
 
 
             <h4>Algoritmus</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Változó
                     i: Egész
@@ -208,18 +208,18 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                    Ki: van ∈ L
+                    Ki: <em class="vissza1">van</em> ∈ L
                     Ef: -
-                    Uf: <em style="background-color: yellow;">van</em> = VAN(i=<em style="background-color: red;">1..elemszám</em>, <em style="background-color: blue;">T(elemek[i])</em>)
+                    Uf: <em class="vissza1">van</em> = VAN(i=<em class="vissza2">1..elemszám</em>, <em class="vissza3">T(elemek[i])</em>)
                 </code></pre>
             </div>
 
 
             <h4>Algoritmus</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Változó
                     i: Egész
@@ -232,23 +232,23 @@
             </div>
             
             <span id="all" class="anchor"></span>
-            <h3>Mind/optimista eldöntés (MIND)</h3>
+            <h3>Mind eldöntés / optimista eldöntés (MIND)</h3>
             
             <p></p>
             
             <h4>Specifikáció</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                    Ki: mind ∈ L
+                    Ki: <em class="vissza1">mind</em> ∈ L
                     Ef: -
-                    Uf: mind = MIND(i=1..elemszám, T(elemek[i]))
+                    Uf: <em class="vissza1">mind</em> = MIND(i=<em class="vissza2">1..elemszám</em>, <em class="vissza3">T(elemek[i])</em>)
                 </code></pre>
             </div>
 
 
             <h4>Algoritmus</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Változó
                     i: Egész
@@ -266,18 +266,18 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                    Ki: ind ∈ Z
+                    Ki: <em class="vissza1">ind</em> ∈ Z
                     Ef: létezik i ∈[i..elemszám]:(T(elemek[i]))
-                    Uf: ind = KIVÁLASZT(i>=1, T(elemek[i]))
+                    Uf: <em class="vissza1">ind</em> = KIVÁLASZT(i>=<em class="vissza2">1</em>, <em class="vissza3">T(elemek[i])</em>)
                 </code></pre>
             </div>
 
 
             <h4>Algoritmus</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Változó
                     i: Egész
@@ -296,18 +296,18 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                    Ki: van ∈ L, ind ∈ Z
+                    Ki: <em class="vissza1">van</em> ∈ L, <em class="vissza4">ind</em> ∈ Z
                     Ef: -
-                    Uf: (van, ind) = KERES(i=1..elemszám, T(elemek[i]))
+                    Uf: (<em class="vissza1">van</em>, <em class="vissza4">ind</em>) = KERES(i=<em class="vissza2">1..elemszám</em>, <em class="vissza3">T(elemek[i])</em>)
                 </code></pre>
             </div>
 
 
             <h4>Algoritmus</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Változó
                     i: Egész
@@ -325,18 +325,18 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Be: elemszám ∈ N, elemek ∈ H[1[1..elemszámok], f:H1->H2
-                    Ki: fvelemek ∈ H2[1..elemszám]
+                    Ki: <em class="vissza1">fvelemek</em> ∈ H2[1..elemszám]
                     Ef: -
-                    Uf: fvelemek = MÁSOL(i=1..elemszám, f(elemek[i]))
+                    Uf: <em class="vissza1">fvelemek</em> = MÁSOL(i=<em class="vissza2">1..elemszám</em>, <em class="vissza3">f(elemek[i])</em>)
                 </code></pre>
             </div>
 
 
             <h4>Algoritmus</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Változó
                     i: Egész
@@ -352,18 +352,18 @@
             <p></p>
             
             <h4>Specifikáció</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                    Ki: db ∈ N, kivelemek ∈ H[1..db]
+                    Ki: <em class="vissza1">db</em> ∈ N, <em class="vissza4">kivelemek</em> ∈ H[1..db]
                     Ef: -
-                    Uf: (db, kivelemek)=KIVÁLOGAT(i=1..elemszám, T(elemek[i]), elemek[i])
+                    Uf: (<em class="vissza1">db</em>, <em class="vissza4">kivelemek</em>)=KIVÁLOGAT(i=<em class="vissza2">1..elemszám</em>, <em class="vissza3">T(elemek[i])</em>, <em class="vissza5">elemek[i]</em>)
                 </code></pre>
             </div>
 
 
             <h4>Algoritmus</h4>
-            <div>
+            <div class="code-toolbar">
                 <pre class=""><code>
                     Változó
                     i: Egész
