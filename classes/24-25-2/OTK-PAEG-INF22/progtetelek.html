@@ -81,14 +81,19 @@
             <h4><a href="#search">Keresés (KERES)</a></h4>
             <h4><a href="#copy">Másolás (MÁSOL)</a></h4>
             <h4><a href="#filter">Kiválogatás (KIVÁLOGAT)</a></h4>
+            <h4><a href="#other">További linkek</a></h4>
             <h4><a href="#sources">Források</a></h4>
         </section>
 
 
         <section id="ej--content">
             <span id="why" class="anchor"></span>
-            <h3>Miért?</h3>
+            <h3>Feladatmegoldás programozási tételekkel</h3>
+
+            <p></p>
             
+
+
             <span id="sum" class="anchor"></span>
             <h3>Összegzés (SZUM)</h3>
             
@@ -97,10 +102,10 @@
             <h4>Specifikáció</h4>
             <div class="code-toolbar">
                 <pre class="language-pseudocode"><code>
-                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám]
-                    Ki: <em class="visszavezetes egy">össz</em> ∈ H
-                    Ef: -
-                    Uf: <em class="visszavezetes egy">össz</em> = SZUM(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">elemek[i]</em>)
+                    <b>Be:</b> elemszám ∈ N, elemek ∈ H[1..elemszám]
+                    <b>Ki:</b> <em class="visszavezetes egy">össz</em> ∈ H
+                    <b>Ef:</b> -
+                    <b>Uf:</b> <em class="visszavezetes egy">össz</em> = SZUM(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">elemek[i]</em>)
                 </code></pre>
             </div>
 
@@ -117,6 +122,8 @@
                 </code></pre>
             </div>
             
+
+
             <span id="count" class="anchor"></span>
             <h3>Megszámolás (DARAB)</h3>
             
@@ -125,10 +132,10 @@
             <h4>Specifikáció</h4>
             <div class="code-toolbar">
                 <pre class="language-pseudocode"><code>
-                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T: H->L
-                    Ki: <em class="visszavezetes egy">db</em> ∈ N
-                    Ef: -
-                    Uf: <em class="visszavezetes egy">db</em> = DARAB(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">T(elemek[i])</em>)
+                    <b>Be:</b> elemszám ∈ N, elemek ∈ H[1..elemszám], T: H->L
+                    <b>Ki:</b> <em class="visszavezetes egy">db</em> ∈ N
+                    <b>Ef:</b> -
+                    <b>Uf:</b> <em class="visszavezetes egy">db</em> = DARAB(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">T(elemek[i])</em>)
                 </code></pre>
             </div>
 
@@ -145,6 +152,8 @@
                 </code></pre>
             </div>
             
+
+
             <span id="max" class="anchor"></span>
             <h3>Maximumkiválasztás (MAX)</h3>
             
@@ -153,10 +162,10 @@
             <h4>Specifikáció</h4>
             <div class="code-toolbar">
                 <pre class="language-pseudocode"><code>
-                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám]
-                    Ki: <em class="visszavezetes egy">maxind</em> ∈ Z, <em class="visszavezetes negy">maxért</em> ∈ H
-                    Ef: elemszám > 0
-                    Uf: (<em class="visszavezetes egy">maxind</em>, <em class="visszavezetes negy">maxért</em>) = MAX(i =<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">elemek[i]</em>)
+                    <b>Be:</b> elemszám ∈ N, elemek ∈ H[1..elemszám]
+                    <b>Ki:</b> <em class="visszavezetes egy">maxind</em> ∈ Z, <em class="visszavezetes negy">maxért</em> ∈ H
+                    <b>Ef:</b> elemszám > 0
+                    <b>Uf:</b> (<em class="visszavezetes egy">maxind</em>, <em class="visszavezetes negy">maxért</em>) = MAX(i =<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">elemek[i]</em>)
                 </code></pre>
             </div>
 
@@ -171,11 +180,13 @@
                         <b>Ha</b> elemek[i] > maxért akkor
                             maxért := elemek[i]
                             maxind := i
-                        Elágazás vége
+                        <b>Elágazás vége</b>
                     <b>Ciklus vége</b>
                 </code></pre>
             </div>
             
+
+
             <span id="min" class="anchor"></span>
             <h3>Minimumkiválasztás (MIN)</h3>
             
@@ -184,10 +195,10 @@
             <h4>Specifikáció</h4>
             <div class="code-toolbar">
                 <pre class="language-pseudocode"><code>
-                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám]
-                    Ki: <em class="visszavezetes egy">minind</em> ∈ Z, <em class="visszavezetes negy">minért</em> ∈ H
-                    Ef: elemszám > 0
-                    Uf: (<em class="visszavezetes egy">minind</em>, <em class="visszavezetes negy">minért</em>) = MIN(i =<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">elemek[i]</em>)
+                    <b>Be:</b> elemszám ∈ N, elemek ∈ H[1..elemszám]
+                    <b>Ki:</b> <em class="visszavezetes egy">minind</em> ∈ Z, <em class="visszavezetes negy">minért</em> ∈ H
+                    <b>Ef:</b> elemszám > 0
+                    <b>Uf:</b> (<em class="visszavezetes egy">minind</em>, <em class="visszavezetes negy">minért</em>) = MIN(i =<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">elemek[i]</em>)
                 </code></pre>
             </div>
 
@@ -202,11 +213,13 @@
                         <b>Ha</b> elemek[i] < minért akkor
                             minért := elemek[i]
                             minind := i
-                        Elágazás vége
+                        <b>Elágazás vége</b>
                     <b>Ciklus vége</b>
                 </code></pre>
             </div>
             
+
+
             <span id="is" class="anchor"></span>
             <h3>Eldöntés (VAN)</h3>
             
@@ -215,10 +228,10 @@
             <h4>Specifikáció</h4>
             <div class="code-toolbar">
                 <pre class="language-pseudocode"><code>
-                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                    Ki: <em class="visszavezetes egy">van</em> ∈ L
-                    Ef: -
-                    Uf: <em class="visszavezetes egy">van</em> = VAN(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">T(elemek[i])</em>)
+                    <b>Be:</b> elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
+                    <b>Ki:</b> <em class="visszavezetes egy">van</em> ∈ L
+                    <b>Ef:</b> -
+                    <b>Uf:</b> <em class="visszavezetes egy">van</em> = VAN(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">T(elemek[i])</em>)
                 </code></pre>
             </div>
 
@@ -236,6 +249,8 @@
                 </code></pre>
             </div>
             
+
+
             <span id="all" class="anchor"></span>
             <h3>Mind eldöntés / optimista eldöntés (MIND)</h3>
             
@@ -244,10 +259,10 @@
             <h4>Specifikáció</h4>
             <div class="code-toolbar">
                 <pre class="language-pseudocode"><code>
-                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                    Ki: <em class="visszavezetes egy">mind</em> ∈ L
-                    Ef: -
-                    Uf: <em class="visszavezetes egy">mind</em> = MIND(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">T(elemek[i])</em>)
+                    <b>Be:</b> elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
+                    <b>Ki:</b> <em class="visszavezetes egy">mind</em> ∈ L
+                    <b>Ef:</b> -
+                    <b>Uf:</b> <em class="visszavezetes egy">mind</em> = MIND(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">T(elemek[i])</em>)
                 </code></pre>
             </div>
 
@@ -264,6 +279,7 @@
                 </code></pre>
             </div>
             
+
             
             <span id="select" class="anchor"></span>
             <h3>Kiválasztás (KIVÁLASZT)</h3>
@@ -273,10 +289,10 @@
             <h4>Specifikáció</h4>
             <div class="code-toolbar">
                 <pre class="language-pseudocode"><code>
-                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                    Ki: <em class="visszavezetes egy">ind</em> ∈ Z
-                    Ef: létezik i ∈[i..elemszám]:(T(elemek[i]))
-                    Uf: <em class="visszavezetes egy">ind</em> = KIVÁLASZT(i>=<em class="visszavezetes ketto">1</em>, <em class="visszavezetes harom">T(elemek[i])</em>)
+                    <b>Be:</b> elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
+                    <b>Ki:</b> <em class="visszavezetes egy">ind</em> ∈ Z
+                    <b>Ef:</b> létezik i ∈[i..elemszám]:(T(elemek[i]))
+                    <b>Uf:</b> <em class="visszavezetes egy">ind</em> = KIVÁLASZT(i>=<em class="visszavezetes ketto">1</em>, <em class="visszavezetes harom">T(elemek[i])</em>)
                 </code></pre>
             </div>
 
@@ -295,6 +311,7 @@
             </div>
             
             
+
             <span id="search" class="anchor"></span>
             <h3>Keresés (KERES)</h3>
             
@@ -303,10 +320,10 @@
             <h4>Specifikáció</h4>
             <div class="code-toolbar">
                 <pre class="language-pseudocode"><code>
-                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                    Ki: <em class="visszavezetes egy">van</em> ∈ L, <em class="visszavezetes negy">ind</em> ∈ Z
-                    Ef: -
-                    Uf: (<em class="visszavezetes egy">van</em>, <em class="visszavezetes negy">ind</em>) = KERES(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">T(elemek[i])</em>)
+                    <b>Be:</b> elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
+                    <b>Ki:</b> <em class="visszavezetes egy">van</em> ∈ L, <em class="visszavezetes negy">ind</em> ∈ Z
+                    <b>Ef:</b> -
+                    <b>Uf:</b> (<em class="visszavezetes egy">van</em>, <em class="visszavezetes negy">ind</em>) = KERES(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">T(elemek[i])</em>)
                 </code></pre>
             </div>
 
@@ -325,6 +342,8 @@
                 </code></pre>
             </div>
             
+
+
             <span id="copy" class="anchor"></span>
             <h3>Másolás (MÁSOL)</h3>
             
@@ -333,10 +352,10 @@
             <h4>Specifikáció</h4>
             <div class="code-toolbar">
                 <pre class="language-pseudocode"><code>
-                    Be: elemszám ∈ N, elemek ∈ H[1[1..elemszámok], f:H1->H2
-                    Ki: <em class="visszavezetes egy">fvelemek</em> ∈ H2[1..elemszám]
-                    Ef: -
-                    Uf: <em class="visszavezetes egy">fvelemek</em> = MÁSOL(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">f(elemek[i])</em>)
+                    <b>Be:</b> elemszám ∈ N, elemek ∈ H[1[1..elemszámok], f:H1->H2
+                    <b>Ki:</b> <em class="visszavezetes egy">fvelemek</em> ∈ H2[1..elemszám]
+                    <b>Ef:</b> -
+                    <b>Uf:</b> <em class="visszavezetes egy">fvelemek</em> = MÁSOL(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">f(elemek[i])</em>)
                 </code></pre>
             </div>
 
@@ -352,6 +371,8 @@
                 </code></pre>
             </div>
             
+
+            
             <span id="filter" class="anchor"></span>
             <h3>Kiválogatás (KIVÁLASZT)</h3>
             
@@ -360,10 +381,10 @@
             <h4>Specifikáció</h4>
             <div class="code-toolbar">
                 <pre class="language-pseudocode"><code>
-                    Be: elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
-                    Ki: <em class="visszavezetes egy">db</em> ∈ N, <em class="visszavezetes negy">kivelemek</em> ∈ H[1..db]
-                    Ef: -
-                    Uf: (<em class="visszavezetes egy">db</em>, <em class="visszavezetes negy">kivelemek</em>)=KIVÁLOGAT(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">T(elemek[i])</em>, <em class="visszavezetes ot">elemek[i]</em>)
+                    <b>Be:</b> elemszám ∈ N, elemek ∈ H[1..elemszám], T:H->L
+                    <b>Ki:</b> <em class="visszavezetes egy">db</em> ∈ N, <em class="visszavezetes negy">kivelemek</em> ∈ H[1..db]
+                    <b>Ef:</b> -
+                    <b>Uf:</b> (<em class="visszavezetes egy">db</em>, <em class="visszavezetes negy">kivelemek</em>)=KIVÁLOGAT(i=<em class="visszavezetes ketto">1..elemszám</em>, <em class="visszavezetes harom">T(elemek[i])</em>, <em class="visszavezetes ot">elemek[i]</em>)
                 </code></pre>
             </div>
 
@@ -378,19 +399,18 @@
                         <b>Ha</b> T(elemek[i]) akkor
                             db := db + 1
                             kivelemek[db] := elemek[i]
-                        Elágazás vége
+                        <b>Elágazás vége</b>
                     <b>Ciklus vége</b>
                 </code></pre>
             </div>
 
 
 
+            
 
-            <!-- <span id="other" class="anchor"></span>
-            <h3 id="otherh">További linkek</h3> -->
-            <!-- <a href="https://www.inf.u-szeged.hu/~ikadar/files/progalap/Linuxosszefoglalo.pdf" target="_blank">Linux parancsok összefoglaló - pdf (in.u-szeged.hu/~ikadar)</a>
-            <a href="https://www.youtube.com/playlist?list=PLS1QulWo1RIb9WVQGJ_vh-RQusbZgO_As" target="_blank">Linux Command Line Tutorial For Begginers (youtube.com/@ProgrammingKnowledge)</a> -->
-
+            <span id="other" class="anchor"></span>
+            <h3 id="otherh">További linkek</h3>
+            <a href="https://progalap.elte.hu/specifikacio/" target="_blank">ELTE specifikáció szerkesztője</a>
 
 
 
